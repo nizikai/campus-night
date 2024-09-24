@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,18 +8,26 @@
 </head>
 
 <body>
-    <section id="intro">
-        <div id="intro-images">
-            <img src="Assets/welcome-home.png">
-        </div>
-    </section>
-    
+
     <section id="full-images">
+        <div id="intro">
+            <img id="logo" src="Assets/logo.gif">
+        </div>
         <img src="Assets/1.png">
         <img src="Assets/2.png">
+        <img src="Assets/3.png">
     </section>
 
-    <script src="./app.js"></script>
-</body>
+    <script>
+        const gifElement = document.getElementById("logo");
 
+        window.onload = function() {
+            const gifDuration = 2000; 
+
+            setTimeout(() => {
+                gifElement.src = "Assets/last.gif"; 
+            }, gifDuration);
+        }
+    </script>
+</body>
 </html>
