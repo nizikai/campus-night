@@ -39,3 +39,13 @@ body {
   max-width: 37vmax;
   pointer-events: none;
 }
+
+#button {
+  position: absolute;
+  top: 91%; 
+  left: 50%;
+  width: 85%;
+  transform: translate(-50%, -50%); 
+  z-index: 2; 
+  /* pointer-events: none; */
+}

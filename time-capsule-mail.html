@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -16,18 +17,22 @@
         <img src="Assets/1.png">
         <img src="Assets/2.png">
         <img src="Assets/3.png">
+        <a href="https://forms.gle/5ZrJYjRbUHS8uAFU7">
+            <img id="button" src="Assets/button.png">
+        </a>
     </section>
 
     <script>
         const gifElement = document.getElementById("logo");
 
-        window.onload = function() {
-            const gifDuration = 2500; 
+        window.onload = function () {
+            const gifDuration = 2500;
 
             setTimeout(() => {
-                gifElement.src = "Assets/last.gif"; 
+                gifElement.src = "Assets/last.gif";
             }, gifDuration);
         }
     </script>
 </body>
+
 </html>
