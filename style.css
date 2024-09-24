@@ -4,27 +4,27 @@ html {
 }
 
 body {
-  margin: 0;     
-  padding: 0;      
+  margin: 0;
+  padding: 0;
 }
 
 #full-images {
-  width: 100%; 
-  margin: 0;      
-  padding: 0; 
-  position: relative; /* Ensures both logo and images can be positioned correctly */
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  position: relative;
 }
 
-#full-images img {
-  max-width: 100%;  
-  height: auto;    
-  display: block;  
-  margin: 0 auto;  
+#full {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
   pointer-events: none;
 }
 
 #intro {
-  position: absolute; 
+  position: absolute;
   top: 0;
   left: 0;
   width: 100%;
@@ -32,7 +32,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  z-index: 1; 
+  z-index: 1;
 }
 
 #intro img {
@@ -42,10 +42,12 @@ body {
 
 #button {
   position: absolute;
-  top: 91%; 
+  top: 91%;
   left: 50%;
   width: 85%;
-  transform: translate(-50%, -50%); 
-  z-index: 2; 
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  pointer-events: auto;
+  cursor: pointer;
   /* pointer-events: none; */
 }
